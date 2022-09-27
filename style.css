@@ -1,0 +1,137 @@
+html,
+body,
+head {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  background: url(./assets/img/Main.jpg) center no-repeat;
+  color: rgb(145, 202, 255);
+  font-family: 'Genshin Impact';
+  font-size: large;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.search-main {
+  margin: 20px auto;
+  display: flex;
+  justify-content: flex-start;
+}
+#search, #button-search, #count {
+  border-radius: 0.3em;
+  font-family: 'Genshin Impact';
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  margin-left: 0.5vw;
+  margin-right: 0.3vw;
+  transition-duration: 0.4s;
+}
+#button-search:hover {
+  background-color: rgb(4, 8, 46);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+}
+/* #button_search, #count {
+  font-family: 'Genshin Impact';
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.4s;
+} */
+#count:not(:empty) {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.grid-item p {
+  font-size: 2vw;
+}
+.grid-container {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+}
+.grid-item {
+  color: black;
+  text-align: center;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 2vw;
+  font-family: 'Genshin Impact';
+  border-radius: 0.5em;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.4s;
+}
+#head1 {
+  background: url(./assets/img/Element_Anemo.png) center no-repeat;
+}
+#head2 {
+  background: url(./assets/img/Element_Cryo.png) center no-repeat;
+}
+#head3 {
+  background: url(./assets/img/Element_Electro.png) center no-repeat;
+}
+#head4 {
+  background: url(./assets/img/Element_Geo.png) center no-repeat;
+}
+#head5 {
+  background: url(./assets/img/Element_Pyro.png) center no-repeat;
+}
+#head1,
+#head2,
+#head3,
+#head4,
+#head5 {
+  background-size: 53%;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.322);
+  padding: 0.01vw 2.5vw;
+}
+#head1:hover {
+  background-color: rgb(188, 255, 246);
+  color: black;
+  box-shadow: 0px 0px 30px rgba(188, 255, 246, 0.7);
+}
+#head2:hover {
+  background-color: rgb(221, 242, 255);
+  color: black;
+  box-shadow: 0px 0px 30px rgba(221, 242, 255, 0.7);
+}
+#head3:hover {
+  background-color: rgb(219, 199, 255);
+  color: black;
+  box-shadow: 0px 0px 30px rgba(219, 199, 255, 0.7);
+}
+#head4:hover {
+  background-color: rgb(255, 226, 182);
+  color: black;
+  box-shadow: 0px 0px 30px rgba(255, 226, 182, 0.7);
+}
+#head5:hover {
+  background-color: rgb(255, 191, 132);
+  color: black;
+  box-shadow: 0px 0px 30px rgba(255, 191, 132, 0.7);
+}
+
+@font-face {
+  font-family: 'Genshin Impact';
+  src: url('./assets/Genshin_Impact.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@media (max-width: 420px) {
+  .grid-container {
+    display: grid;
+  }
+  .grid-column {
+    width: 320px;
+  }
+  .grid-item,
+  .grid-item p {
+    font-size: large;
+  }
+}
