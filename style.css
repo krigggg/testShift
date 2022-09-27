@@ -13,10 +13,9 @@ head {
   font-size: large;
   background-size: cover;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 .header-community-search {
-  margin-left: 3vw;
+  margin-left: 4vw;
 }
 .fandom-community-header_image img {
   display: block;
@@ -33,7 +32,7 @@ head {
   top: 18px;
   transform: translateX(-50%);
   z-index: 200;
-  margin-left: 1vw;
+  margin-left: 1.5vw;
 }
 .page-side-tools {
   position: sticky;
@@ -65,12 +64,15 @@ head {
 }
 #search,
 #button-search,
-#count {
+#count,
+#menu-grid-column {
   border-radius: 5px;
   font-family: 'Genshin Impact';
   box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.5);
   border: none;
   transition-duration: 0.4s;
+  font-size: 1.3rem;
+  margin: 0.5vw;
 }
 #button-search:hover {
   background-color: rgb(4, 8, 46);
@@ -79,10 +81,15 @@ head {
 }
 .wrap-input {
   margin-bottom: 20px;
+  width: 400px;
+  display: table-header-group;
 }
 #count:not(:empty) {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+}
+.grid-column {
+  width: 320px;
 }
 .grid-container {
   margin: 0 auto;
@@ -91,7 +98,7 @@ head {
   justify-content: center;
 }
 .grid-item {
-  color: black;
+  color: #ffffffc7;
   text-align: center;
   border: none;
   margin: 5px;
@@ -127,29 +134,29 @@ head {
   color: rgba(0, 0, 0, 0);
   background-color: rgba(255, 255, 255, 0.322);
 }
-#head1:hover {
+#head1:hover, .h1:hover{
   background-color: rgb(188, 255, 246);
-  color: black;
+  color: rgb(10, 83, 74);
   box-shadow: 0px 0px 30px rgba(188, 255, 246, 0.7);
 }
-#head2:hover {
+#head2:hover, .h2:hover {
   background-color: rgb(221, 242, 255);
-  color: black;
+  color: rgb(11, 85, 131);
   box-shadow: 0px 0px 30px rgba(221, 242, 255, 0.7);
 }
-#head3:hover {
+#head3:hover, .h3:hover {
   background-color: rgb(219, 199, 255);
-  color: black;
+  color: rgb(76, 39, 146);
   box-shadow: 0px 0px 30px rgba(219, 199, 255, 0.7);
 }
-#head4:hover {
+#head4:hover, .h4:hover {
   background-color: rgb(255, 226, 182);
-  color: black;
+  color: rgb(119, 79, 19);
   box-shadow: 0px 0px 30px rgba(255, 226, 182, 0.7);
 }
-#head5:hover {
+#head5:hover, .h5:hover {
   background-color: rgb(255, 191, 132);
-  color: black;
+  color: rgb(121, 49, 21);
   box-shadow: 0px 0px 30px rgba(255, 191, 132, 0.7);
 }
 

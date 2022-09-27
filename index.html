@@ -13,13 +13,21 @@
         <div class="community-header-wrapper">
           <header class="fandom-community-header">
             <a accesskey="z" href="https://genshin.hoyoverse.com/ru/" class="fandom-community-header_image">
-              <img src="https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Site-logo.png/revision/latest?cb=20210723101020" width="500" height="180">
+              <img src="./assets/img/community-genshin-icon.png" width="500" height="180">
             </a>
           </header>
         </div>
         <div class="search-main">
           <div class="wrap-input">
-            <input id="search" type="search" placeholder="Search..."/>
+            <input id="search" type="search" placeholder="Search..." style="width: 40vw;"/>
+            <select id="menu-grid-column">
+              <option disabled selected>Выберите колонку</option>
+              <option value="head1">Anemo</option>
+              <option value="head2">Cryo</option>
+              <option value="head3">Electro</option>
+              <option value="head4">Geo</option>
+              <option value="head5">Pyro</option>
+            </select>
             <input id="button-search" type="button" value="Поиск" />
           </div>
           <output id="count"></output>
@@ -38,60 +46,62 @@
         </button>
       </div>
       </div>
-      
       <div class="grid-container">
-        <div class="grid-column">
+        <div class="grid-column head1">
           <div class="grid-item" id="head1">
             Anemo
           </div>
-          <div class="grid-item">Jean</div>
-          <div class="grid-item">Kaedehara Kazuha</div>
-          <div class="grid-item">Sayu</div>
-          <div class="grid-item">Xiao</div>
+          <div class="grid-item h1">Jean</div>
+          <div class="grid-item h1">Kaedehara Kazuha</div>
+          <div class="grid-item h1">Sayu</div>
+          <div class="grid-item h1">Xiao</div>
         </div>
 
-        <div class="grid-column">
+        <div class="grid-column head2">
           <div class="grid-item" id="head2">
             Cryo
           </div>
-          <div class="grid-item">Chongyun</div>
-          <div class="grid-item">Eula</div>
-          <div class="grid-item">Ganyu</div>
-          <div class="grid-item">Kamisato Ayaka</div>
+          <div class="grid-item h2">Chongyun</div>
+          <div class="grid-item h2">Eula</div>
+          <div class="grid-item h2">Ganyu</div>
+          <div class="grid-item h2">Kamisato Ayaka</div>
         </div>
 
-        <div class="grid-column">
+        <div class="grid-column head3">
           <div class="grid-item" id="head3">
             Electro
           </div>
-          <div class="grid-item">Dori</div>
-          <div class="grid-item">Fischl</div>
-          <div class="grid-item">Kujou Sara</div>
-          <div class="grid-item">Raiden Shogun</div>
+          <div class="grid-item h3">Dori</div>
+          <div class="grid-item h3">Fischl</div>
+          <div class="grid-item h3">Kujou Sara</div>
+          <div class="grid-item h3">Raiden Shogun</div>
         </div>
 
-        <div class="grid-column">
+        <div class="grid-column head4">
           <div class="grid-item" id="head4">
             Geo
           </div>
-          <div class="grid-item">Arataki Itto</div>
-          <div class="grid-item">Noelle</div>
-          <div class="grid-item">Zhongli</div>
-          <div class="grid-item">Albedo</div>
+          <div class="grid-item h4">Arataki Itto</div>
+          <div class="grid-item h4">Noelle</div>
+          <div class="grid-item h4">Zhongli</div>
+          <div class="grid-item h4">Albedo</div>
         </div>
 
-        <div class="grid-column">
+        <div class="grid-column head5">
           <div class="grid-item" id="head5">
             Pyro
           </div>
-          <div class="grid-item">Bennett</div>
-          <div class="grid-item">Hu Tao</div>
-          <div class="grid-item">Klee</div>
-          <div class="grid-item">Xinyan</div>
+          <div class="grid-item h5">Bennett</div>
+          <div class="grid-item h5">Hu Tao</div>
+          <div class="grid-item h5">Klee</div>
+          <div class="grid-item h5">Xinyan</div>
         </div>
       </div>
     </div>
     <script src="lib/jquery/jquery-3.6.1.min.js"></script>
-    <script src="test.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/getIdx.js"></script>
+    <script src="scripts/jqueryClear.js"></script>
   </body>
 </html>
